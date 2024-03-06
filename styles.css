@@ -1,8 +1,8 @@
 /* styles.css for choose-wisely */
 
-/* * {
+* {
     border: 1px solid blue;
-} */
+}
 
 :root {
     --main-white: #ffffff;
@@ -25,14 +25,19 @@
 }
 
 body {
+    background-image: url(wooden_background.jpeg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
     color: var(--main-white);
     text-align: center;
     margin: 75px;
     font-size: 45px;
     font-family: 'October Crow', sans-serif;
-    background-image: url(wooden_background.jpeg);
-    background-size:cover;
-    background-attachment: fixed;
 }
 
 h1 {
