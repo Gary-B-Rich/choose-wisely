@@ -1,1 +1,76 @@
 /* styles.css for choose-wisely */
+
+/* * {
+    border: 1px solid blue;
+} */
+
+:root {
+    --main-white: #ffffff;
+    --main-red: #f10e0eaf;
+    --main-blue: #3c3b6e;
+    --main-gray: #303841;
+}
+
+@font-face {
+    font-family: 'Raven Song';
+    src: url(Raven-Song-Font/Raven-Song.ttf);
+    font-style:normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'October Crow';
+    src: url(OctoberCrow.ttf);
+    font-style:normal;
+    font-weight: 100;
+}
+
+body {
+    color: var(--main-white);
+    text-align: center;
+    margin: 75px;
+    font-size: 45px;
+    font-family: 'October Crow', sans-serif;
+}
+
+h1 {
+    color: var(--main-red);
+    text-align: center;
+    font-family: 'Raven Song', sans-serif;
+    font-size: 100px;
+}
+
+h2 {
+    color: var(--main-red);
+    text-align: center;
+    font-family: 'Raven Song', sans-serif;
+    font-size: 75px;
+}
+
+.button {
+    background-color: var(--main-red);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .button1 {
+    font-size: 50px;
+    font-family: 'Raven Song', sans-serif;
+}
+
+.me {
+    color: var(--main-red) !important;
+    font-size: 30px !important;
+    font-family: 'Raven Song', sans-serif;
+}
+
+body {
+    background-image: url(wooden_background.jpeg);
+    background-size:cover;
+    background-attachment: fixed;
+}
