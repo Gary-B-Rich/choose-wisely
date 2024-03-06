@@ -40,14 +40,14 @@ body {
     font-family: 'October Crow', sans-serif;
 }
 
-h1 {
+.main-title {
     color: var(--main-red);
     text-align: center;
     font-family: 'Raven Song', sans-serif;
     font-size: 100px;
 }
 
-h2 {
+.title {
     color: var(--main-red);
     text-align: center;
     font-family: 'Raven Song', sans-serif;
