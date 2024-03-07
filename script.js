@@ -2,7 +2,7 @@
 
 
 
-let pageNumber = 2;
+let pageNumber = 0;
 let x = pageNumber;
 
 // initialize variables
@@ -45,6 +45,9 @@ button1.addEventListener("click", ()=> {
 
     //button clicks one page down from current page ***
     x--;
+    if(x<0){
+        x=1;
+    }
     pageNumber=x;
     //************************************************** 
     
@@ -85,16 +88,12 @@ function currentArrayLog() {
     console.log(`Page num: ${pageNumber}`)
     console.log(`Big: ${bigTitleArray[pageNumber]}`);
     console.log(`Small: ${smallTitleArray[pageNumber]}`);
-    
     if(textArray[pageNumber]===undefined) {
         console.log("Text: undefined")
     } else {
         let shorterText=textArray[pageNumber].slice(0,25);
         console.log(`Text: ${shorterText}`);
     }
-    
     console.log(`One: ${button1Array[pageNumber]}`);
-    console.log(`Two: ${button2Array[pageNumber]}`);
-    
-    
+    console.log(`Two: ${button2Array[pageNumber]}`);   
 };
