@@ -1,12 +1,12 @@
 /* styles.css for choose-wisely */
 
-* {
+/* * {
     border: 1px solid blue;
-}
+} */
 
 :root {
-    --main-white: #ffffff;
-    --main-red: #f10e0eaf;
+    --main-white: #ffffffb2;
+    --main-red: #f50b0b;
     --main-blue: #3c3b6e;
     --main-gray: #303841;
 }
@@ -15,7 +15,7 @@
     font-family: 'Raven Song';
     src: url(Raven-Song.ttf);
     font-style:normal;
-    font-weight: 100;
+    
 }
 @font-face {
     font-family: 'October Crow';
@@ -31,36 +31,45 @@ body {
 }
 
 .main-container {
-    height: 95vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    color: var(--main-white);
     text-align: center;
     justify-content: center;
-    align-items: center;
-    
-    
-    font-family: 'October Crow', sans-serif;
+    align-items: center; 
 }
 
-.main-title {
+.bigTitle {
     color: var(--main-red);
     text-align: center;
     font-family: 'Raven Song', sans-serif;
-    font-size: 8vw;
+    font-size: 9vh;
     padding: 15px;
     font-weight: 700;
+    text-shadow: -10px -10px black;
     
 }
 
-.title {
+.smallTitle {
     color: var(--main-red);
     text-align: center;
     font-family: 'Raven Song', sans-serif;
-    font-size: 75px;
+    font-size: 6vh;
+    padding: 15px;
+    font-weight: 500;
+    text-shadow: -6px -6px black;
+}
+
+.text {
+    font-family: 'October Crow', sans-serif;
+    color: var(--main-white);
+    font-size: 4vh;
+    padding: 15px;
+    text-shadow: -1px -1px black;
 }
 
 .button-container {
+    padding: 15px;
     display: flex;;
     gap: 50px;
 }
@@ -74,16 +83,17 @@ button {
     display: inline-block;
     margin: 4px 2px;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 4.5vh;
+    font-weight: 500;
     font-family: 'Raven Song', sans-serif;
     border-radius: 50px;
   }
 
 
 
-.me {
+/* .me {
     color: var(--main-red) !important;
     font-size: 30px !important;
     font-family: 'Raven Song', sans-serif;
-}
+} */
 
