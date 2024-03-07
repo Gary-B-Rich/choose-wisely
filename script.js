@@ -8,6 +8,13 @@ const textArray=[`Play Now?`];
 const button1Array=[`Play`];
 const button2Array=[`Play`];
 
+const bigTitle = document.getElementById("bigTitle");
+bigTitle.innerText = bigTitleArray[0];
+
+const smallTitle = document.getElementById("smallTitle");
+smallTitle.innerText = smallTitleArray[0];
+
+
 const button1 = document.getElementById("button1");
 button1.addEventListener("click", ()=> {
     console.log("clicked button1");
