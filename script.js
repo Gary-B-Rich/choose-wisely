@@ -13,7 +13,7 @@ const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
 // arrays for each div text
-const bigTitleArray=[`Choose Your Own Fate`,`1`,`2`,`3`];
+const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`];
 const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot it`];
 const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.
 Stars fill the sky, as a small crescent moon offers little light.\n
