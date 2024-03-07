@@ -1,6 +1,9 @@
 // script.js for choose-wisely
 
-let pageNumber=0;
+
+let x = 2;
+let pageNumber = 3;
+
 // initialize variables
 const bigTitle = document.getElementById("bigTitle");
 const smallTitle = document.getElementById("smallTitle");
@@ -9,53 +12,66 @@ const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
 // arrays for each div text
-const bigTitleArray=[`Choose Your Own Fate`,``];
-const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`];
+const bigTitleArray=[`Choose Your Own Fate`,`1`,`2`];
+const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`];
 const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.
 Stars fill the sky, as a small crescent moon offers little light.\n
 You are driving through a remote area with only the radio to keep you company.
 An unexpected flat tire and no spare leaves you stranded in the middle of nowhere.\n
 You try your cell phone, but there's no service.\n
 By your estimation the next gas station is about 10 miles up the road.\n
-Will you wait in the car and hope someone comes along, or will you start walking?`];
-const button1Array=[`Play`,`Wait`];
-const button2Array=[`Play`,`Walk`];
+Will you wait in the car and hope someone comes along, or will you start walking?`,
+`You decide to wait in the car and hope someone comes along.\n
+90 minutes pass, and not one single car approaches.\n
+You check your phone again, and there's still no service.
+Half of the battery life has already been drained since you broke down.
+(Searching for a signal always causes it to die quickly.)
+Deciding to save the battery, you power your phone off.\n
+Another 30 minutes pass.  Do you want to keep waiting?`];
+const button1Array=[`Play`,`Wait`,`Wait`];
+const button2Array=[`Play`,`Walk`,`Walk`];
 
-// render all text in the dom
-bigTitle.innerText = bigTitleArray[0];
+// render all text in the dom at pageload
+updatePage();
+/* bigTitle.innerText = bigTitleArray[pageNumber];
 smallTitle.innerText = smallTitleArray[pageNumber];
 text.innerText = textArray[pageNumber];
-button1.innerText = button1Array[pageNumber];
-button2.innerText = button2Array[pageNumber];
+button1.innerText = `${button1Array[pageNumber]}`;
+button2.innerText = `${button2Array[pageNumber]}`; */
 
 // add functions to buttons
 button1.addEventListener("click", ()=> {
     console.log("clicked button1");
-    pageNumber=1;
+    pageNumber=x;
     updatePage();
 });
 button2.addEventListener("click", ()=> {
     console.log("clicked button2");
-    pageNumber=1;
+    pageNumber=x;
     updatePage();
 });
 
 // changes all text in the dom to pageNumber
 function updatePage() {
-    if(pageNumber==0) {
+    /* if(pageNumber===0) {
         bigTitle.innerText=bigTitleArray[0];
     } else {
         bigTitle.innerText=bigTitleArray[1];
-    }
+    } */
+    bigTitle.innerText = bigTitleArray[pageNumber];
     smallTitle.innerText = smallTitleArray[pageNumber];
     text.innerText = textArray[pageNumber];
     button1.innerText = button1Array[pageNumber];
     button2.innerText = button2Array[pageNumber];
+    window.scrollTo(0,0);
+    currentArrayLog();
 }
 
 // console.log each array for current page
-console.log(bigTitleArray[pageNumber]);
-console.log(smallTitleArray[pageNumber]);
-console.log(textArray[pageNumber]);
-console.log(button1Array[pageNumber]);
-console.log(button2Array[pageNumber]);
+function currentArrayLog() {
+    console.log(bigTitleArray[pageNumber]);
+    console.log(smallTitleArray[pageNumber]);
+    console.log(textArray[pageNumber]);
+    console.log(button1Array[pageNumber]);
+    console.log(button2Array[pageNumber]);
+};
