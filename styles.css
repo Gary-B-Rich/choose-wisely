@@ -38,7 +38,7 @@ body {
     align-items: center; 
 }
 
-.bigTitle {
+#bigTitle {
     color: var(--main-red);
     text-align: center;
     font-family: 'Raven Song', sans-serif;
@@ -49,7 +49,7 @@ body {
     
 }
 
-.smallTitle {
+#smallTitle {
     color: var(--main-red);
     text-align: center;
     font-family: 'Raven Song', sans-serif;
@@ -59,7 +59,7 @@ body {
     text-shadow: -6px -6px black;
 }
 
-.text {
+#text {
     font-family: 'October Crow', sans-serif;
     color: var(--main-white);
     font-size: 4vh;
