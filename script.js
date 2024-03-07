@@ -2,7 +2,7 @@
 
 
 
-let pageNumber = 4;
+let pageNumber = 2;
 let x = pageNumber;
 
 // initialize variables
@@ -42,14 +42,22 @@ updatePage();
 // add functions to buttons
 button1.addEventListener("click", ()=> {
     console.log("clicked button1");
-    x++;
+
+    //button clicks one page down from current page ***
+    x--;
     pageNumber=x;
-    //pageNumber++;
+    //************************************************** 
+    
     updatePage();
 });
 button2.addEventListener("click", ()=> {
     console.log("clicked button2");
-    //pageNumber=x;
+
+    //button clicks one page up from current page ****
+    x++;
+    pageNumber=x;
+    //************************************************
+
     updatePage();
 });
 
@@ -68,13 +76,25 @@ function updatePage() {
     button2.innerText = button2Array[pageNumber];
     window.scrollTo(0,0);
     currentArrayLog();
+   ;
 }
 
 // console.log each array for current page
 function currentArrayLog() {
-    console.log(bigTitleArray[pageNumber]);
-    console.log(smallTitleArray[pageNumber]);
-    console.log(textArray[pageNumber]);
-    console.log(button1Array[pageNumber]);
-    console.log(button2Array[pageNumber]);
+    console.clear();
+    console.log(`Page num: ${pageNumber}`)
+    console.log(`Big: ${bigTitleArray[pageNumber]}`);
+    console.log(`Small: ${smallTitleArray[pageNumber]}`);
+    
+    if(textArray[pageNumber]===undefined) {
+        console.log("Text: undefined")
+    } else {
+        let shorterText=textArray[pageNumber].slice(0,25);
+        console.log(`Text: ${shorterText}`);
+    }
+    
+    console.log(`One: ${button1Array[pageNumber]}`);
+    console.log(`Two: ${button2Array[pageNumber]}`);
+    
+    
 };
