@@ -1,7 +1,14 @@
 // script.js for choose-wisely
 
-let pageNumber=1;
+let pageNumber=0;
+// initialize variables
+const bigTitle = document.getElementById("bigTitle");
+const smallTitle = document.getElementById("smallTitle");
+const text = document.getElementById("text");
+const button1 = document.getElementById("button1");
+const button2 = document.getElementById("button2");
 
+// arrays for each div text
 const bigTitleArray=[`Choose Your Own Fate`,``];
 const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`];
 const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.
@@ -14,28 +21,39 @@ Will you wait in the car and hope someone comes along, or will you start walking
 const button1Array=[`Play`,`Wait`];
 const button2Array=[`Play`,`Walk`];
 
-const bigTitle = document.getElementById("bigTitle");
-bigTitle.innerText = bigTitleArray[pageNumber];
-
-const smallTitle = document.getElementById("smallTitle");
+// render all text in the dom
+bigTitle.innerText = bigTitleArray[0];
 smallTitle.innerText = smallTitleArray[pageNumber];
-
-const text = document.getElementById("text");
 text.innerText = textArray[pageNumber];
-
-const button1 = document.getElementById("button1");
-button1.addEventListener("click", ()=> {
-    console.log("clicked button1");
-});
 button1.innerText = button1Array[pageNumber];
-
-const button2 = document.getElementById("button2");
-button2.addEventListener("click", ()=> {
-    console.log("clicked button2");
-});
 button2.innerText = button2Array[pageNumber];
 
+// add functions to buttons
+button1.addEventListener("click", ()=> {
+    console.log("clicked button1");
+    pageNumber=1;
+    updatePage();
+});
+button2.addEventListener("click", ()=> {
+    console.log("clicked button2");
+    pageNumber=1;
+    updatePage();
+});
 
+// changes all text in the dom to pageNumber
+function updatePage() {
+    if(pageNumber==0) {
+        bigTitle.innerText=bigTitleArray[0];
+    } else {
+        bigTitle.innerText=bigTitleArray[1];
+    }
+    smallTitle.innerText = smallTitleArray[pageNumber];
+    text.innerText = textArray[pageNumber];
+    button1.innerText = button1Array[pageNumber];
+    button2.innerText = button2Array[pageNumber];
+}
+
+// console.log each array for current page
 console.log(bigTitleArray[pageNumber]);
 console.log(smallTitleArray[pageNumber]);
 console.log(textArray[pageNumber]);
