@@ -1,8 +1,9 @@
 // script.js for choose-wisely
 
 
-let x = 2;
-let pageNumber = 3;
+
+let pageNumber = 4;
+let x = pageNumber;
 
 // initialize variables
 const bigTitle = document.getElementById("bigTitle");
@@ -12,8 +13,8 @@ const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
 // arrays for each div text
-const bigTitleArray=[`Choose Your Own Fate`,`1`,`2`];
-const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`];
+const bigTitleArray=[`Choose Your Own Fate`,`1`,`2`,`3`];
+const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot it`];
 const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.
 Stars fill the sky, as a small crescent moon offers little light.\n
 You are driving through a remote area with only the radio to keep you company.
@@ -27,33 +28,35 @@ You check your phone again, and there's still no service.
 Half of the battery life has already been drained since you broke down.
 (Searching for a signal always causes it to die quickly.)
 Deciding to save the battery, you power your phone off.\n
-Another 30 minutes pass.  Do you want to keep waiting?`];
-const button1Array=[`Play`,`Wait`,`Wait`];
-const button2Array=[`Play`,`Walk`,`Walk`];
+Another 30 minutes pass.  Do you want to keep waiting?`,`You lock the car and start walking down the road in the dark.
+Both sides are lined with dense forest.\n
+After what feels like about an hour, you come across a dirt path leading into the woods.\n
+You can't see where the path leads, but you notice a distant light flickering in that direction.\n
+Do you want to stay on the main road, or do you want to see if the path leads to someone who can help?`];
+const button1Array=[`Play`,`Wait`,`Wait`,`Road`];
+const button2Array=[`Play`,`Walk`,`Walk`,`Path`];
 
 // render all text in the dom at pageload
 updatePage();
-/* bigTitle.innerText = bigTitleArray[pageNumber];
-smallTitle.innerText = smallTitleArray[pageNumber];
-text.innerText = textArray[pageNumber];
-button1.innerText = `${button1Array[pageNumber]}`;
-button2.innerText = `${button2Array[pageNumber]}`; */
 
 // add functions to buttons
 button1.addEventListener("click", ()=> {
     console.log("clicked button1");
+    x++;
     pageNumber=x;
+    //pageNumber++;
     updatePage();
 });
 button2.addEventListener("click", ()=> {
     console.log("clicked button2");
-    pageNumber=x;
+    //pageNumber=x;
     updatePage();
 });
 
 // changes all text in the dom to pageNumber
 function updatePage() {
-    /* if(pageNumber===0) {
+    /* filter bigTitle for only page 0 
+    if(pageNumber===0) {
         bigTitle.innerText=bigTitleArray[0];
     } else {
         bigTitle.innerText=bigTitleArray[1];
