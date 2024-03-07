@@ -14,6 +14,9 @@ bigTitle.innerText = bigTitleArray[0];
 const smallTitle = document.getElementById("smallTitle");
 smallTitle.innerText = smallTitleArray[0];
 
+const text = document.getElementById("text");
+text.innerText = textArray[0];
+
 
 const button1 = document.getElementById("button1");
 button1.addEventListener("click", ()=> {
