@@ -15,13 +15,11 @@
     font-family: 'Raven Song';
     src: url(Raven-Song.ttf);
     font-style:normal;
-    
 }
 @font-face {
     font-family: 'October Crow';
     src: url(OctoberCrow.ttf);
     font-style:normal;
-    font-weight: 100;
 }
 
 body {
@@ -65,7 +63,7 @@ body {
     color: var(--main-white);
     font-size: 4vh;
     padding: 15px;
-    text-shadow: -1px -1px black;
+    text-shadow: -2px -2px black;
 }
 
 .button-container {
@@ -73,6 +71,7 @@ body {
     display: flex;;
     gap: 50px;
 }
+
 button {
     background-color: var(--main-red);
     border: none;
