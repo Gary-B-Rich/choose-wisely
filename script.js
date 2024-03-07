@@ -4,7 +4,7 @@ let pageNumber=0;
 
 const bigTitleArray=[`Choose Your Own Fate`];
 const smallTitleArray=[`By Gary B. Rich`];
-const textArray=[`Play Now?`];
+const textArray=[`Play now?`];
 const button1Array=[`Play`];
 const button2Array=[`Play`];
 
