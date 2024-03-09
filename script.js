@@ -3,8 +3,6 @@
 
 
 let pageNumber = 0;
-let x = pageNumber;
-
 // initialize variables
 const bigTitle = document.getElementById("bigTitle");
 const smallTitle = document.getElementById("smallTitle");
@@ -14,8 +12,10 @@ const button2 = document.getElementById("button2");
 
 // arrays for each div text
 const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`];
+
 const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot it`,`Pathological`,
 `Cabin in the Woods`,`Knock knock who's there`,`Nope Out`];
+
 const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.
 Stars fill the sky, as a small crescent moon offers little light.\n
 You are driving through a remote area with only the radio to keep you company.
@@ -49,10 +49,11 @@ You still don't hear anything, and nobody answers.\n\n
 Do you want to try opening the door, or would you rather just go back to the main road?`,
 `Nobody seems to be home, so you turn around and start heading back to the main road.\n
 About 50 yards from the cabin you step in a bear trap that you didn't see in the dim moonlight.\n
-You try to free yourself, but the trap is firmly lodged in your broken leg.<br>
-\n
+You try to free yourself, but the trap is firmly lodged in your broken leg.\n
 Nobody finds you in time.`];
+
 const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Window`,`Door`,`Play`];
+
 const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`];
 
 // render all text in the dom at pageload
@@ -79,16 +80,10 @@ button1.addEventListener("click", ()=> {
         case 4:
             pageNumber=5;
             break;
+        case 7:
+            pageNumber=1;
+            break;
     }
-
-    //button clicks one page down from current page ***
- /*    x--;
-    if(x<0){
-        x=1;
-    }
-    pageNumber=x; */
-    //************************************************** 
-    
     updatePage();
 });
 
@@ -111,18 +106,18 @@ button2.addEventListener("click", ()=> {
             break;
         case 4:
             pageNumber=undefined;
+            break;
         case 5:
             pageNumber=6;
             break;
         case 6:
             pageNumber=7;
-    }
-    
-    //button clicks one page up from current page ****
-   /*  x++;
-    pageNumber=x; */
-    //************************************************
+            break;
+        case 7:
+            pageNumber=1;
+            break;
 
+    }
     updatePage();
 });
 
