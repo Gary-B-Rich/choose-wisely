@@ -47,27 +47,47 @@ updatePage();
 // add functions to buttons
 button1.addEventListener("click", ()=> {
     console.log("clicked button1");
+    switch(pageNumber) {
+        case 0:
+            pageNumber=1;
+            break;
+        case 1:
+            pageNumber=2;
+            break;
+    }
 
     //button clicks one page down from current page ***
-    x--;
+ /*    x--;
     if(x<0){
         x=1;
     }
-    pageNumber=x;
+    pageNumber=x; */
     //************************************************** 
     
     updatePage();
 });
+
+
+// BUTTON 2
 button2.addEventListener("click", ()=> {
     console.log("clicked button2");
-
+    switch(pageNumber) {
+        case 0:
+            pageNumber=1;
+            break;
+        case 1:
+            pageNumber=3;
+            break;
+    }
+    
     //button clicks one page up from current page ****
-    x++;
-    pageNumber=x;
+   /*  x++;
+    pageNumber=x; */
     //************************************************
 
     updatePage();
 });
+
 
 // changes all text in the dom to pageNumber
 function updatePage() {
