@@ -11,14 +11,14 @@ const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
 // arrays for each div text
-const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`];
+const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,`Nine`];
 
 const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot it`,`Pathological`,
-`Cabin in the Woods`,`Knock knock who's there`,`Nope Out`];
+`Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`];
 
-const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.
+const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.  \
 Stars fill the sky, as a small crescent moon offers little light.\n
-You are driving through a remote area with only the radio to keep you company.
+You are driving through a remote area with only the radio to keep you company.  \
 An unexpected flat tire and no spare leaves you stranded in the middle of nowhere.\n
 You try your cell phone, but there's no service.\n
 By your estimation the next gas station is about 10 miles up the road.\n
@@ -50,11 +50,21 @@ Do you want to try opening the door, or would you rather just go back to the mai
 `Nobody seems to be home, so you turn around and start heading back to the main road.\n
 About 50 yards from the cabin you step in a bear trap that you didn't see in the dim moonlight.\n
 You try to free yourself, but the trap is firmly lodged in your broken leg.\n
-Nobody finds you in time.`];
+Nobody finds you in time.`,
+`The door isn't locked and opens easily.  You hesitantly walk inside.\n
+The flickering light is coming from a burning oil lamp.  Other than the
+lamp, there doesn't appear to be any signs of anyone around.  But why would
+someone light a lamp, and then leave?  Strange.`,
+`You decide to creep up to the window, and take a look inside.\n
+There's a large person - who would best be described as a mountain man
+sitting at a makeshift table.  Sitting on the table are several pistols,
+and the man appears to be cleaning a shotgun.  He suddenly notices you,
+quickly swaps the shotgun for two of the pistols, and runs in the direction of the door.\n
+Do you want to try to reason with him, or run for it?`];
 
-const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Window`,`Door`,`Play`];
+const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Window`,`Door`,`Play`,`*8*`,`Talk`];
 
-const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`];
+const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`];
 
 // render all text in the dom at pageload
 updatePage();
@@ -80,9 +90,17 @@ button1.addEventListener("click", ()=> {
         case 4:
             pageNumber=5;
             break;
+        case 5:
+            pageNumber=9;
+            break;
+        case 6:
+            pageNumber=8;
+            break;
         case 7:
             pageNumber=1;
             break;
+    
+
     }
     updatePage();
 });
