@@ -80,7 +80,7 @@ button1.addEventListener("click", ()=> {
             pageNumber=1;
             break;
         case 1:
-            pageNumber=2;
+            pageNumber=getRandomNumber();
             break;
         case 2:
             pageNumber=undefined;
@@ -156,14 +156,22 @@ function updatePage() {
     button2.innerText = button2Array[pageNumber];
     window.scrollTo(0,0);
     currentArrayLog();
-    getRandomNumber();
    
 };
 
-
+// rolls for one of 3 options
 function getRandomNumber() {
     random = Math.floor(Math.random()*3) + 1
-    console.log(`random: ${random}`);
+    switch(random) {
+        case 1:
+            return undefined;
+            break;
+        case 2:
+            return 2;
+            break;
+        case 3:
+            return undefined;
+    };
 } 
 
 // console.log each array for current page
