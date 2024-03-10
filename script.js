@@ -29,7 +29,8 @@ You check your phone again, and there's still no service.
 Half of the battery life has already been drained since you broke down.
 (Searching for a signal always causes it to die quickly.)
 Deciding to save the battery, you power your phone off.\n
-Another 30 minutes pass.  Do you want to keep waiting?`,`You lock the car and start walking down the road in the dark.
+Another 30 minutes pass.  Do you want to keep waiting?`,
+`You lock the car and start walking down the road in the dark.  \
 Both sides are lined with dense forest.\n
 After what feels like about an hour, you come across a dirt path leading into the woods.\n
 You can't see where the path leads, but you notice a distant light flickering in that direction.\n
@@ -62,7 +63,7 @@ and the man appears to be cleaning a shotgun.  He suddenly notices you,
 quickly swaps the shotgun for two of the pistols, and runs in the direction of the door.\n
 Do you want to try to reason with him, or run for it?`];
 
-const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Window`,`Door`,`Play`,`*8*`,`Talk`];
+const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`*8*`,`Talk`];
 
 const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`];
 
@@ -140,7 +141,7 @@ button2.addEventListener("click", ()=> {
 });
 
 
-// changes all text in the dom to pageNumber
+// changes all text in the dom
 function updatePage() {
     /* filter bigTitle for only page 0 
     if(pageNumber===0) {
