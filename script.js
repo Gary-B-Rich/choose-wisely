@@ -156,8 +156,15 @@ function updatePage() {
     button2.innerText = button2Array[pageNumber];
     window.scrollTo(0,0);
     currentArrayLog();
-   ;
-}
+    getRandomNumber();
+   
+};
+
+
+function getRandomNumber() {
+    random = Math.floor(Math.random()*3) + 1
+    console.log(`random: ${random}`);
+} 
 
 // console.log each array for current page
 function currentArrayLog() {
