@@ -11,10 +11,10 @@ const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
 // arrays for each div text
-const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,`Nine`];
+const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,`Nine`,`Ten`];
 
 const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot it`,`Pathological`,
-`Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`];
+`Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`,`Recue Me`];
 
 const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.  \
 Stars fill the sky, as a small crescent moon offers little light.\n
@@ -25,10 +25,7 @@ By your estimation the next gas station is about 10 miles up the road.\n
 Will you wait in the car and hope someone comes along, or will you start walking?`,
 `You decide to wait in the car and hope someone comes along.\n
 90 minutes pass, and not one single car approaches.\n
-You check your phone again, and there's still no service.
-Half of the battery life has already been drained since you broke down.
-(Searching for a signal always causes it to die quickly.)
-Deciding to save the battery, you power your phone off.\n
+You check your phone again, and there's still no service.\n
 Another 30 minutes pass.  Do you want to keep waiting?`,
 `You lock the car and start walking down the road in the dark.  \
 Both sides are lined with dense forest.\n
@@ -61,11 +58,15 @@ There's a large person - who would best be described as a mountain man
 sitting at a makeshift table.  Sitting on the table are several pistols,
 and the man appears to be cleaning a shotgun.  He suddenly notices you,
 quickly swaps the shotgun for two of the pistols, and runs in the direction of the door.\n
-Do you want to try to reason with him, or run for it?`];
+Do you want to try to reason with him, or run for it?`,
+`You decide to wait in the car and hope that somebody shows up.
+After about 45 minutes you notice another vehicle's headlights in your rear view mirror.
+As luck would have it, the vehicle turns out to be a police officer.\n
+The officer radios for a tow truck, and after about another hour you're back in civization.`];
 
-const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`*8*`,`Talk`];
+const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`*8*`,`Talk`,`Play`];
 
-const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`];
+const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`,`Again`];
 
 // render all text in the dom at pageload
 updatePage();
@@ -159,18 +160,19 @@ function updatePage() {
    
 };
 
-// rolls for one of 3 options
+// function for Special roll
 function getRandomNumber() {
     random = Math.floor(Math.random()*3) + 1
     switch(random) {
         case 1:
-            return undefined;
+            return 10;
             break;
         case 2:
             return 2;
             break;
         case 3:
             return undefined;
+            break;
     };
 } 
 
