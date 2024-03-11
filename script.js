@@ -74,7 +74,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*
 
 // render all text in the dom at pageload
 
-pageNumber=0;
+pageNumber=1;
 updatePage();
 
 // add functions to buttons
@@ -87,7 +87,7 @@ button1.addEventListener("click", ()=> {
             pageNumber=1;
             break;
         case 1:
-            pageNumber=getRandomNumber();
+            pageNumber=specialEvent();
             break;
         case 2:
             pageNumber=undefined;
@@ -197,7 +197,7 @@ function updatePage() {
 };
 
 // function for Special roll
-function getRandomNumber() {
+function specialEvent() {
     random = Math.floor(Math.random()*3) + 1
     switch(random) {
         case 1:
