@@ -11,10 +11,10 @@ const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
 // arrays for each div text
-const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,`Nine`,`Ten`,`Eleven`,`Twelve`];
+const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,`Nine`,`Ten`,`Eleven`,`Twelve`,`Thirteen`];
 
 const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot it`,`Pathological`,
-`Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`,`Recue Me`,`Ready Set GO`,`Yackity Yack`];
+`Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`,`Recue Me`,`Ready Set GO`,`Yackity Yack`,`High Spirits`];
 
 const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.  \
 Stars fill the sky, as a small crescent moon offers little light.\n
@@ -22,55 +22,60 @@ You are driving through a remote area with only the radio to keep you company.  
 An unexpected flat tire and no spare leaves you stranded in the middle of nowhere.\n
 You try your cell phone, but there's no service.\n
 By your estimation the next gas station is about 10 miles up the road.\n
-Will you wait in the car and hope someone comes along, or will you start walking?`,
+Will you wait in the car and hope someone comes along, or will you start walking?`,//end
 `You decide to wait in the car and hope someone comes along.\n
 90 minutes pass, and not one single car approaches.\n
 You check your phone again, and there's still no service.\n
-Another 30 minutes pass.  Do you want to keep waiting?`,
+Another 30 minutes pass.  Do you want to keep waiting?`,//end
 `You lock the car and start walking down the road in the dark.  \
 Both sides are lined with dense forest.\n
 After what feels like about an hour, you come across a dirt path leading into the woods.\n
 You can't see where the path leads, but you notice a distant light flickering in that direction.\n
-Do you want to stay on the main road, or do you want to see if the path leads to someone who can help?`,
+Do you want to stay on the main road, or do you want to see if the path leads to someone who can help?`,//end
 `Leaving the main road, you start walking down the dirt path into the deep woods.
 Trees have overgrown the sides, and branches scratch your face and arms in the dark.\n
 As you continue on the winding path, the shape of a small building begins to form.
 You realize the flickering light is coming from the window of a small cabin.\n
-Do you want to approach the cabin, or do you decide to quietly go back to the main road?`,
+Do you want to approach the cabin, or do you decide to quietly go back to the main road?`,//end
 `You quietly walk up to the cabin until you're standing just outside the door.
 The only sounds you hear are the crickets chirping.  Other than that, everything seems quiet.\n
 The immediate area around the cabin gives the impression that someone is currently living here.
 Around the side of the cabin, light is still flickering in the only window.\n
-Do you want to try looking in the window, or do you want to knock on the door?`,
+Do you want to try looking in the window, or do you want to knock on the door?`,//end
 `You loudly knock on the door several times, and wait.\n
 You still don't hear anything, and nobody answers.\n\n
-Do you want to try opening the door, or would you rather just go back to the main road?`,
+Do you want to try opening the door, or would you rather just go back to the main road?`,//end
 `Nobody seems to be home, so you turn around and start heading back to the main road.\n
 About 50 yards from the cabin you step in a bear trap that you didn't see in the dim moonlight.\n
 You try to free yourself, but the trap is firmly lodged in your broken leg.\n
-Nobody finds you in time.`,
+Nobody finds you in time.`,//end
 `The door isn't locked and opens easily.  You hesitantly walk inside.\n
 The flickering light is coming from a burning oil lamp.  Other than the
 lamp, there doesn't appear to be any signs of anyone around.  But why would
-someone light a lamp, and then leave?  Strange.`,
+someone light a lamp, and then leave?  Strange.`,//end
 `You decide to creep up to the window, and take a look inside.\n
 There's a large person - who would best be described as a mountain man
 sitting at a makeshift table.  Sitting on the table are several pistols,
 and the man appears to be cleaning a shotgun.  He suddenly notices you,
 quickly swaps the shotgun for two of the pistols, and runs in the direction of the door.\n
-Do you want to try to reason with him, or run for it?`,
+Do you want to try to reason with him, or run for it?`,//end
 `You decide to wait in the car and hope that somebody shows up.
 After about 45 minutes you notice another vehicle's headlights in your rear view mirror.
 As luck would have it, the vehicle turns out to be a police officer.\n
-The officer radios for a tow truck, and after about another hour you're back in civization.`,
-`You try to make a run for it, but not even the fastest Olymplic sprinter can outrun a bullet.`,
+The officer radios for a tow truck, and after about another hour you're back in civization.`,//end
+`You try to make a run for it, but not even the fastest Olymplic sprinter can outrun a bullet.`,//end
 `He turns out to be a friendly fellow who is more than happy to help you get your flat tire repaired.  
 He even has a spare that fits your vehicle.  After only around 20 minutes of looking in the window, \
-your tire is changed and you are happily on your way.`];
+your tire is changed and you are happily on your way.`,//end
+`Headlights suddenly appear far up the road behind you.
+After a minute or two, an old pick up truck pulls up and rolls to a stop.
+The driver offers you a ride to the gas station, but he seems extremely intoxicated.\n
+            
+Do you take him up on his offer, or do you decline?`];
 
-const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`*8*`,`Talk`,`Play`,`Play`,`Play`];
+const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`*8*`,`Talk`,`Play`,`Play`,`Play`,`Ride`];
 
-const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`,`Again`,`Again`,`Again`];
+const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`,`Again`,`Again`,`Again`,`Pass`];
 
 // render all text in the dom at pageload
 
@@ -121,7 +126,10 @@ button1.addEventListener("click", ()=> {
             break;
         case 12:
             pageNumber=1;
-            break;      
+            break;
+        case 13:
+            pageNumber=undefined;
+            break;
     
 
     }
@@ -171,6 +179,9 @@ button2.addEventListener("click", ()=> {
             break;
         case 12:
             pageNumber=1;
+            break;
+        case 13:
+            pageNumber=undefined;
             break;
 
     }
