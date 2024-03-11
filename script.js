@@ -2,8 +2,8 @@
 
 
 // initialize variables
-let pageNumber = 0;
-let waiting=false;
+let pageNumber=0;
+let waiting=0;
 const bigTitle = document.getElementById("bigTitle");
 const smallTitle = document.getElementById("smallTitle");
 const text = document.getElementById("text");
@@ -67,7 +67,8 @@ As luck would have it, the vehicle turns out to be a police officer.\n
 The officer radios for a tow truck, and after about another hour you're back in civization.`,//end
 `You try to make a run for it, but not even the fastest Olymplic sprinter can outrun a bullet.`,//end
 `He turns out to be a friendly fellow who is more than happy to help you get your flat tire repaired.  
-He even has a spare that fits your vehicle.  After only around 20 minutes of looking in the window, \
+He even has a spare that fits your vehicle.  
+\nAfter only 20 minutes from looking in the window, \
 your tire is changed and you are happily on your way.`,//end
 `Headlights suddenly appear far up the road behind you.
 After a minute or two, an old pick up truck pulls up and rolls to a stop.
@@ -108,9 +109,9 @@ button1.addEventListener("click", ()=> {
             break;
         case 1:
             pageNumber=specialEvent();
-            waiting=true;
             break;
         case 2:
+            waiting++;
             pageNumber=specialEvent();
             break;
         case 3:
@@ -150,7 +151,7 @@ button1.addEventListener("click", ()=> {
             pageNumber=1;
             break;
         case 15:
-            waiting=false;
+            waiting--;
             pageNumber=1;
             break;
 
@@ -209,7 +210,7 @@ button2.addEventListener("click", ()=> {
             pageNumber=1;
             break;
         case 15:
-            waiting=false;
+            waiting--;
             pageNumber=1;
             break;
 
@@ -239,12 +240,13 @@ function updatePage() {
 // function for Special roll
 function specialEvent() {
     random = Math.floor(Math.random()*3) + 1
+    //random=2;
     switch(random) {
         case 1:
             return 10;
             break;
         case 2:
-            if(waiting===false){
+            if(waiting<1){
                 return 2;
                 break;
             }
