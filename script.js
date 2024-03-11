@@ -11,10 +11,10 @@ const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
 // arrays for each div text
-const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,`Nine`,`Ten`];
+const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,`Nine`,`Ten`,`Eleven`];
 
 const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot it`,`Pathological`,
-`Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`,`Recue Me`];
+`Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`,`Recue Me`,`Ready Set GO`];
 
 const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.  \
 Stars fill the sky, as a small crescent moon offers little light.\n
@@ -62,11 +62,12 @@ Do you want to try to reason with him, or run for it?`,
 `You decide to wait in the car and hope that somebody shows up.
 After about 45 minutes you notice another vehicle's headlights in your rear view mirror.
 As luck would have it, the vehicle turns out to be a police officer.\n
-The officer radios for a tow truck, and after about another hour you're back in civization.`];
+The officer radios for a tow truck, and after about another hour you're back in civization.`,
+`You try to make a run for it, but not even the fastest Olymplic sprinter can outrun a bullet.`];
 
-const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`*8*`,`Talk`,`Play`];
+const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`*8*`,`Talk`,`Play`,`Play`];
 
-const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`,`Again`];
+const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`,`Again`,`Again`];
 
 // render all text in the dom at pageload
 updatePage();
@@ -101,6 +102,18 @@ button1.addEventListener("click", ()=> {
         case 7:
             pageNumber=1;
             break;
+        case 8:
+            pageNumber=undefined;
+            break;
+        case 9:
+            pageNumber=undefined;
+            break;
+        case 10:
+            pageNumber=1;
+            break;
+        case 11:
+            pageNumber=1;
+            break;       
     
 
     }
@@ -134,6 +147,18 @@ button2.addEventListener("click", ()=> {
             pageNumber=7;
             break;
         case 7:
+            pageNumber=1;
+            break;
+        case 8:
+            pageNumber=undefined;
+            break;
+        case 9:
+            pageNumber=11;
+            break;
+        case 10:
+            pageNumber=1;
+            break;
+        case 11:
             pageNumber=1;
             break;
 
