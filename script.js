@@ -11,10 +11,10 @@ const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
 // arrays for each div text
-const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,`Nine`,`Ten`,`Eleven`];
+const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,`Nine`,`Ten`,`Eleven`,`Twelve`];
 
 const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot it`,`Pathological`,
-`Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`,`Recue Me`,`Ready Set GO`];
+`Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`,`Recue Me`,`Ready Set GO`,`Yackity Yack`];
 
 const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.  \
 Stars fill the sky, as a small crescent moon offers little light.\n
@@ -63,13 +63,18 @@ Do you want to try to reason with him, or run for it?`,
 After about 45 minutes you notice another vehicle's headlights in your rear view mirror.
 As luck would have it, the vehicle turns out to be a police officer.\n
 The officer radios for a tow truck, and after about another hour you're back in civization.`,
-`You try to make a run for it, but not even the fastest Olymplic sprinter can outrun a bullet.`];
+`You try to make a run for it, but not even the fastest Olymplic sprinter can outrun a bullet.`,
+`He turns out to be a friendly fellow who is more than happy to help you get your flat tire repaired.  
+He even has a spare that fits your vehicle.  After only around 20 minutes of looking in the window, \
+your tire is changed and you are happily on your way.`];
 
-const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`*8*`,`Talk`,`Play`,`Play`];
+const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`*8*`,`Talk`,`Play`,`Play`,`Play`];
 
-const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`,`Again`,`Again`];
+const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`,`Again`,`Again`,`Again`];
 
 // render all text in the dom at pageload
+
+pageNumber=0;
 updatePage();
 
 // add functions to buttons
@@ -106,14 +111,17 @@ button1.addEventListener("click", ()=> {
             pageNumber=undefined;
             break;
         case 9:
-            pageNumber=undefined;
+            pageNumber=12;
             break;
         case 10:
             pageNumber=1;
             break;
         case 11:
             pageNumber=1;
-            break;       
+            break;
+        case 12:
+            pageNumber=1;
+            break;      
     
 
     }
@@ -159,6 +167,9 @@ button2.addEventListener("click", ()=> {
             pageNumber=1;
             break;
         case 11:
+            pageNumber=1;
+            break;
+        case 12:
             pageNumber=1;
             break;
 
