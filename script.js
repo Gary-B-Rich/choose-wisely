@@ -1,9 +1,9 @@
 // script.js for choose-wisely
 
 
-
-let pageNumber = 0;
 // initialize variables
+let pageNumber = 0;
+let waiting=false;
 const bigTitle = document.getElementById("bigTitle");
 const smallTitle = document.getElementById("smallTitle");
 const text = document.getElementById("text");
@@ -11,10 +11,12 @@ const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
 // arrays for each div text
-const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,`Nine`,`Ten`,`Eleven`,`Twelve`,`Thirteen`];
+const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,
+`Nine`,`Ten`,`Eleven`,`Twelve`,`Thirteen`,`Fourteen`,`Fifteen`,`Sixteen`];
 
 const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot it`,`Pathological`,
-`Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`,`Recue Me`,`Ready Set GO`,`Yackity Yack`,`High Spirits`];
+`Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`,`Recue Me`,`Ready Set GO`,
+`Yackity Yack`,`High Spirits`,`Don't Knock It`,`Just You Wait`,`Road to Ruin`];
 
 const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.  \
 Stars fill the sky, as a small crescent moon offers little light.\n
@@ -23,7 +25,7 @@ An unexpected flat tire and no spare leaves you stranded in the middle of nowher
 You try your cell phone, but there's no service.\n
 By your estimation the next gas station is about 10 miles up the road.\n
 Will you wait in the car and hope someone comes along, or will you start walking?`,//end
-`You decide to wait in the car and hope someone comes along.\n
+`You decide to wait in the car and hope someone comes along.
 90 minutes pass, and not one single car approaches.\n
 You check your phone again, and there's still no service.\n
 Another 30 minutes pass.  Do you want to keep waiting?`,//end
@@ -70,16 +72,29 @@ your tire is changed and you are happily on your way.`,//end
 `Headlights suddenly appear far up the road behind you.
 After a minute or two, an old pick up truck pulls up and rolls to a stop.
 The driver offers you a ride to the gas station, but he seems extremely intoxicated.\n
-            
-Do you take him up on his offer, or do you decline?`];
+Do you take him up on his offer, or do you decline?`,//end
+`You wait in the car for a little while, when suddenly out of nowhere somebody knocks on the window.\n  
+Startled, you reluctatly roll the window down.  The stranger seems confused, and asks if he can get a ride.  \
+You inform him about the flat tire, and he seems even more confused.  He then gets angry, produces a pistol, \
+and shoots you dead.  \n
+Your body is found the next morning.`,//end
+`You continue to wait in the car.  You do nothing else but wait in the car.\n
+In fact, you wait in the car for so long that you eventually get bored and die.`,//end
+`You decide to 'nope out', and continue down the main road.  
+After a while you check your phone.  It's been another another, and there's still no reception.  \
+You notice the battery has lost a fair amount of charge.\n
+Putting the phone away you suddenly notice that there's a house in the distace.  \
+It was hard to see, because there isn't a single light on anywhere.  \
+Either everyone is asleep, or nobody is home.\n
+Do you want to try ringing the doorbell, or just continue walking on the road?`];
 
-const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`*8*`,`Talk`,`Play`,`Play`,`Play`,`Ride`];
+const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`*8*`,`Talk`,`Play`,`Play`,`Play`,`Ride`,`Play`,`Play`,`Bell`];
 
-const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`,`Again`,`Again`,`Again`,`Pass`];
+const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`,`Again`,`Again`,`Again`,`Pass`,`Again`,`Again`,`Walk`];
 
 // render all text in the dom at pageload
 
-pageNumber=1;
+pageNumber=0;
 updatePage();
 
 // add functions to buttons
@@ -93,12 +108,13 @@ button1.addEventListener("click", ()=> {
             break;
         case 1:
             pageNumber=specialEvent();
+            waiting=true;
             break;
         case 2:
-            pageNumber=undefined;
+            pageNumber=specialEvent();
             break;
         case 3:
-            pageNumber=undefined;
+            pageNumber=16;
             break;
         case 4:
             pageNumber=5;
@@ -130,7 +146,13 @@ button1.addEventListener("click", ()=> {
         case 13:
             pageNumber=undefined;
             break;
-    
+        case 14:
+            pageNumber=1;
+            break;
+        case 15:
+            waiting=false;
+            pageNumber=1;
+            break;
 
     }
     updatePage();
@@ -154,7 +176,7 @@ button2.addEventListener("click", ()=> {
             pageNumber=4;
             break;
         case 4:
-            pageNumber=undefined;
+            pageNumber=16;
             break;
         case 5:
             pageNumber=6;
@@ -182,6 +204,13 @@ button2.addEventListener("click", ()=> {
             break;
         case 13:
             pageNumber=undefined;
+            break;
+        case 14:
+            pageNumber=1;
+            break;
+        case 15:
+            waiting=false;
+            pageNumber=1;
             break;
 
     }
@@ -215,19 +244,27 @@ function specialEvent() {
             return 10;
             break;
         case 2:
-            return 2;
-            break;
+            if(waiting===false){
+                return 2;
+                break;
+            }
+            else {
+                return 15;
+                break;
+            };
         case 3:
-            return undefined;
+            return 14;
             break;
+    
     };
+    return 0;
 } 
 
 // console.log each array for current page
 function currentArrayLog() {
-    console.clear();
+    //console.clear();
     console.log(`Page num: ${pageNumber}`)
-    console.log(`Big: ${bigTitleArray[pageNumber]}`);
+    /*console.log(`Big: ${bigTitleArray[pageNumber]}`);
     console.log(`Small: ${smallTitleArray[pageNumber]}`);
     if(textArray[pageNumber]===undefined) {
         console.log("Text: undefined")
@@ -236,5 +273,6 @@ function currentArrayLog() {
         console.log(`Text: ${shorterText}`);
     }
     console.log(`One: ${button1Array[pageNumber]}`);
-    console.log(`Two: ${button2Array[pageNumber]}`);   
+    console.log(`Two: ${button2Array[pageNumber]}`);
+    */  
 };
