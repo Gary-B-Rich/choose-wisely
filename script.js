@@ -159,7 +159,6 @@ button1.addEventListener("click", ()=> {
     updatePage();
 });
 
-
 // BUTTON 2
 button2.addEventListener("click", ()=> {
     console.log("clicked button2");
