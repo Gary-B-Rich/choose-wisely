@@ -232,7 +232,6 @@ function updatePage() {
     button2.innerText = button2Array[pageNumber];
     window.scrollTo(0,0);
     currentArrayLog();
-   
 };
 
 // function for Special roll
