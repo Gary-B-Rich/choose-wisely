@@ -216,7 +216,6 @@ button2.addEventListener("click", ()=> {
     updatePage();
 });
 
-
 // changes all text in the dom
 function updatePage() {
     /* filter bigTitle for only page 0 
