@@ -32,6 +32,10 @@ body {
     align-items: center; 
 }
 
+#filler {
+    height: 11em;
+}
+
 #bigTitle {
     color: var(--main-red);
     text-align: center;
