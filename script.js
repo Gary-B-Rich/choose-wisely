@@ -3,6 +3,7 @@
 // initialize variables
 let pageNumber=0;
 let waiting=0;
+const filler = document.getElementById("filler");
 const bigTitle = document.getElementById("bigTitle");
 const smallTitle = document.getElementById("smallTitle");
 const text = document.getElementById("text");
@@ -102,6 +103,8 @@ updatePage();
 // BUTTON 1
 button1.addEventListener("click", ()=> {
     console.log("clicked button1");
+    bigTitle.hidden="hidden";
+    filler.hidden="hidden";
     switch(pageNumber) {
         case 0:
             pageNumber=1;
@@ -161,6 +164,8 @@ button1.addEventListener("click", ()=> {
 // BUTTON 2
 button2.addEventListener("click", ()=> {
     console.log("clicked button2");
+    bigTitle.hidden="hidden";
+    filler.hidden="hidden";
     switch(pageNumber) {
         case 0:
             pageNumber=1;
