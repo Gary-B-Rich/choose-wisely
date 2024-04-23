@@ -22,7 +22,6 @@ body {
     background-attachment:fixed;
     min-width: 325px;
 }
-
 .main-container {   
     display: flex;
     flex-direction: column;
