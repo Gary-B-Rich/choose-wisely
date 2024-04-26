@@ -40,7 +40,6 @@ body {
     font-weight: 700;
     text-shadow: -10px -10px black;
 }
-
 #smallTitle {
     color: var(--main-red);
     text-align: center;
