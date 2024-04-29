@@ -62,7 +62,6 @@ body {
     display: flex;;
     gap: 50px;
 }
-
 button {
     background-color: var(--main-red);
     border: none;
