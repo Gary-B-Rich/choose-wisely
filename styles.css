@@ -77,7 +77,6 @@ button {
     font-family: 'Raven Song', sans-serif;
     border-radius: 50px;
   }
-
   button:hover {
     cursor: pointer;
 }
