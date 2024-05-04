@@ -258,7 +258,6 @@ function specialEvent() {
         case 3:
             return 14;
             break;
-    
     };
     return 0;
 } 
