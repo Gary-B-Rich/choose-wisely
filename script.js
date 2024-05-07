@@ -54,7 +54,8 @@ Nobody finds you in time.`,//end
 `The door isn't locked and opens easily.  You hesitantly walk inside.\n
 The flickering light is coming from a burning oil lamp.  Other than the
 lamp, there doesn't appear to be any signs of anyone around.  But why would
-someone light a lamp, and then leave?  Strange.`,//end
+someone light a lamp, and then leave?  Strange.\n
+Do you want to walk back to the main road, or do you want to wait to see if anyone shows up?`,//end
 `You decide to creep up to the window, and take a look inside.\n
 There's a large person - who would best be described as a mountain man
 sitting at a makeshift table.  Sitting on the table are several pistols,
@@ -89,13 +90,13 @@ It was hard to see, because there isn't a single light on anywhere.  \
 Either everyone is asleep, or nobody is home.\n
 Do you want to try ringing the doorbell, or just continue walking on the road?`];
 
-const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`*8*`,`Talk`,`Play`,`Play`,`Play`,`Ride`,`Play`,`Play`,`Bell`];
+const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`Road`,`Talk`,`Play`,`Play`,`Play`,`Ride`,`Play`,`Play`,`Bell`];
 
-const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`*8*`,`Run!`,`Again`,`Again`,`Again`,`Pass`,`Again`,`Again`,`Walk`];
+const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`Wait`,`Run!`,`Again`,`Again`,`Again`,`Pass`,`Again`,`Again`,`Walk`];
 
 // render all text in the dom at pageload
 
-pageNumber=0;
+pageNumber=8;
 updatePage();
 
 // add functions to buttons
