@@ -194,7 +194,7 @@ button2.addEventListener("click", ()=> {
             pageNumber=1;
             break;
         case 8:
-            pageNumber=undefined;
+            pageNumber=undefined; //fix me
             break;
         case 9:
             pageNumber=11;
@@ -209,7 +209,7 @@ button2.addEventListener("click", ()=> {
             pageNumber=1;
             break;
         case 13:
-            pageNumber=undefined;
+            pageNumber=undefined; //fix me
             break;
         case 14:
             pageNumber=1;
