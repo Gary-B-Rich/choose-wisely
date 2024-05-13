@@ -10,7 +10,8 @@ const text = document.getElementById("text");
 const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
-// arrays for each div text
+// arrays for each div text:
+
 const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,
 `Nine`,`Ten`,`Eleven`,`Twelve`,`Thirteen`,`Fourteen`,`Fifteen`,`Sixteen`,`Seventeen`];
 
@@ -237,12 +238,6 @@ button2.addEventListener("click", ()=> {
 
 // changes all text in the dom
 function updatePage() {
-    /* filter bigTitle for only page 0 
-    if(pageNumber===0) {
-        bigTitle.innerText=bigTitleArray[0];
-    } else {
-        bigTitle.innerText=bigTitleArray[1];
-    } */
     bigTitle.innerText = bigTitleArray[pageNumber];
     smallTitle.innerText = smallTitleArray[pageNumber];
     text.innerText = textArray[pageNumber];
