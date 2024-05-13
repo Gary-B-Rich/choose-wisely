@@ -29,12 +29,12 @@ Will you wait in the car and hope someone comes along, or will you start walking
 `You decide to wait in the car and hope someone comes along.
 90 minutes pass, and not one single car approaches.\n
 You check your phone again, and there's still no service.\n
-Another 30 minutes pass.  Do you want to keep waiting?`,//end
+Another 30 minutes pass.  Do you want to keep waiting?`,//end page 2
 `You lock the car and start walking down the road in the dark.  \
 Both sides are lined with dense forest.\n
 After what feels like about an hour, you come across a dirt path leading into the woods.\n
 You can't see where the path leads, but you notice a distant light flickering in that direction.\n
-Do you want to stay on the main road, or do you want to see if the path leads to someone who can help?`,//end
+Do you want to stay on the main road, or do you want to see if the path leads to someone who can help?`,//end page 3
 `Leaving the main road, you start walking down the dirt path into the deep woods.
 Trees have overgrown the sides, and branches scratch your face and arms in the dark.\n
 As you continue on the winding path, the shape of a small building begins to form.
@@ -98,7 +98,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=17;
+pageNumber=16;
 updatePage();
 
 // add functions to buttons
@@ -159,7 +159,9 @@ button1.addEventListener("click", ()=> {
             waiting--;
             pageNumber=1;
             break;
-
+        case 16:
+            pageNumber=undefined; //fix me
+            break;
     }
     updatePage();
 });
@@ -219,7 +221,9 @@ button2.addEventListener("click", ()=> {
             waiting--;
             pageNumber=1;
             break;
-
+        case 16:
+            pageNumber=undefined; //fix me
+            break;
     }
     updatePage();
 });
