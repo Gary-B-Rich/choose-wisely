@@ -39,7 +39,7 @@ Do you want to stay on the main road, or do you want to see if the path leads to
 Trees have overgrown the sides, and branches scratch your face and arms in the dark.\n
 As you continue on the winding path, the shape of a small building begins to form.
 You realize the flickering light is coming from the window of a small cabin.\n
-Do you want to approach the cabin, or do you decide to quietly go back to the main road?`,//end
+Do you want to approach the cabin, or do you decide to quietly go back to the main road?`,//end page 4
 `You quietly walk up to the cabin until you're standing just outside the door.
 The only sounds you hear are the crickets chirping.  Other than that, everything seems quiet.\n
 The immediate area around the cabin gives the impression that someone is currently living here.
@@ -98,7 +98,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=17;
+pageNumber=4;
 updatePage();
 
 // add functions to buttons
