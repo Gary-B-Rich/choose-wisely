@@ -44,10 +44,10 @@ Do you want to approach the cabin, or do you decide to quietly go back to the ma
 The only sounds you hear are the crickets chirping.  Other than that, everything seems quiet.\n
 The immediate area around the cabin gives the impression that someone is currently living here.
 Around the side of the cabin, light is still flickering in the only window.\n
-Do you want to try looking in the window, or do you want to knock on the door?`,//end
+Do you want to try looking in the window, or do you want to knock on the door?`,//end page 5
 `You loudly knock on the door several times, and wait.\n
 You still don't hear anything, and nobody answers.\n\n
-Do you want to try opening the door, or would you rather just go back to the main road?`,//end
+Do you want to try opening the door, or would you rather just go back to the main road?`,//end page 6
 `Nobody seems to be home, so you turn around and start heading back to the main road.\n
 About 50 yards from the cabin you step in a bear trap that you didn't see in the dim moonlight.\n
 You try to free yourself, but the trap is firmly lodged in your broken leg.\n
@@ -98,7 +98,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=4;
+pageNumber=6;
 updatePage();
 
 // add functions to buttons
