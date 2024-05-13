@@ -51,22 +51,22 @@ Do you want to try opening the door, or would you rather just go back to the mai
 `Nobody seems to be home, so you turn around and start heading back to the main road.\n
 About 50 yards from the cabin you step in a bear trap that you didn't see in the dim moonlight.\n
 You try to free yourself, but the trap is firmly lodged in your broken leg.\n
-Nobody finds you in time.`,//end
+Nobody finds you in time.`,//end page 7
 `The door isn't locked and opens easily.  You hesitantly walk inside.\n
 The flickering light is coming from a burning oil lamp.  Other than the
 lamp, there doesn't appear to be any signs of anyone around.  But why would
 someone light a lamp, and then leave?  Strange.\n
-Do you want to walk back to the main road, or do you want to wait to see if anyone shows up?`,//end
+Do you want to walk back to the main road, or do you want to wait to see if anyone shows up?`,//end page 8
 `You decide to creep up to the window, and take a look inside.\n
 There's a large person - who would best be described as a mountain man
 sitting at a makeshift table.  Sitting on the table are several pistols,
 and the man appears to be cleaning a shotgun.  He suddenly notices you,
 quickly swaps the shotgun for two of the pistols, and runs in the direction of the door.\n
-Do you want to try to reason with him, or run for it?`,//end
+Do you want to try to reason with him, or run for it?`,//end page 9
 `You decide to wait in the car and hope that somebody shows up.
 After about 45 minutes you notice another vehicle's headlights in your rear view mirror.
 As luck would have it, the vehicle turns out to be a police officer.\n
-The officer radios for a tow truck, and after about another hour you're back in civization.`,//end
+The officer radios for a tow truck, and after about another hour you're back in civization.`,//end page 10
 `You try to make a run for it, but not even the fastest Olymplic sprinter can outrun a bullet.`,//end
 `He turns out to be a friendly fellow who is more than happy to help you get your flat tire repaired.  
 He even has a spare that fits your vehicle.  
@@ -98,7 +98,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=6;
+pageNumber=10;
 updatePage();
 
 // add functions to buttons
