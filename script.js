@@ -18,13 +18,14 @@ const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot
 `Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`,`Recue Me`,`Ready Set GO`,
 `Yackity Yack`,`High Spirits`,`Don't Knock It`,`Just You Wait`,`Road to Ruin`,`Rides from Strangers`];
 
-const textArray=[`Play now?`,`It is an early summer evening, just past nightfall.  \
+const textArray=[`Play now?`,//end page 0
+`It is an early summer evening, just past nightfall.  \
 Stars fill the sky, as a small crescent moon offers little light.\n
 You are driving through a remote area with only the radio to keep you company.  \
 An unexpected flat tire and no spare leaves you stranded in the middle of nowhere.\n
 You try your cell phone, but there's no service.\n
 By your estimation the next gas station is about 10 miles up the road.\n
-Will you wait in the car and hope someone comes along, or will you start walking?`,//end
+Will you wait in the car and hope someone comes along, or will you start walking?`,//end page 1
 `You decide to wait in the car and hope someone comes along.
 90 minutes pass, and not one single car approaches.\n
 You check your phone again, and there's still no service.\n
