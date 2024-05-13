@@ -81,16 +81,17 @@ Do you take him up on his offer, or do you decline?`,//end page 13
 Startled, you reluctatly roll the window down.  The stranger seems confused, and asks if he can get a ride.  \
 You inform him about the flat tire, and he seems even more confused.  He then gets angry, produces a pistol, \
 and shoots you dead.  \n
-Your body is found the next morning.`,//end
+Your body is found the next morning.`,//end page 14
 `You continue to wait in the car.  You do nothing else but wait in the car.\n
-In fact, you wait in the car for so long that you eventually get bored and die.`,//end
-`You decide to 'nope out', and continue down the main road.  
+In fact, you wait in the car for so long that you eventually get bored and die.`,//end page 15
+`You decide to 'nope out', and continue down the main road.   
 After a while you check your phone.  It's been another another, and there's still no reception.  \
 You notice the battery has lost a fair amount of charge.\n
 Putting the phone away you suddenly notice that there's a house in the distace.  \
 It was hard to see, because there isn't a single light on anywhere.  \
 Either everyone is asleep, or nobody is home.\n
-Do you want to try ringing the doorbell, or just continue walking on the road?`];
+Do you want to try ringing the doorbell, or just continue walking on the road?`,//end page 16
+];
 
 const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`Road`,`Talk`,`Play`,`Play`,`Play`,`Ride`,`Play`,`Play`,`Bell`];
 
@@ -98,7 +99,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=13;
+pageNumber=16;
 updatePage();
 
 // add functions to buttons
