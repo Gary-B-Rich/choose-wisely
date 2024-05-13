@@ -67,16 +67,16 @@ Do you want to try to reason with him, or run for it?`,//end page 9
 After about 45 minutes you notice another vehicle's headlights in your rear view mirror.
 As luck would have it, the vehicle turns out to be a police officer.\n
 The officer radios for a tow truck, and after about another hour you're back in civization.`,//end page 10
-`You try to make a run for it, but not even the fastest Olymplic sprinter can outrun a bullet.`,//end
+`You try to make a run for it, but not even the fastest Olymplic sprinter can outrun a bullet.`,//end page 11
 `He turns out to be a friendly fellow who is more than happy to help you get your flat tire repaired.  
 He even has a spare that fits your vehicle.  
 \nAfter only 20 minutes from looking in the window, \
-your tire is changed and you are happily on your way.`,//end
+your tire is changed and you are happily on your way.`,//end page 12
 `Headlights suddenly appear far up the road behind you.
 After a minute or two, an old pick up truck pulls up and rolls to a stop.\n
 You can smell the alcohol on the driver, before he even speaks.  He offers you a ride to the gas station, \
 but he is very intoxicated.\n
-Do you take him up on his offer, or do you decline?`,//end
+Do you take him up on his offer, or do you decline?`,//end page 13
 `You wait in the car for a little while, when suddenly out of nowhere somebody knocks on the window.\n  
 Startled, you reluctatly roll the window down.  The stranger seems confused, and asks if he can get a ride.  \
 You inform him about the flat tire, and he seems even more confused.  He then gets angry, produces a pistol, \
@@ -98,7 +98,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=10;
+pageNumber=13;
 updatePage();
 
 // add functions to buttons
