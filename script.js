@@ -100,7 +100,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=0;  //sets page for working purposes
+pageNumber=0;
 updatePage();
 
 // add functions to buttons
