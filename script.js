@@ -99,6 +99,7 @@ const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`R
 const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`Wait`,`Run!`,`Again`,`Again`,`Again`,`Pass`,`Again`,`Again`,`Walk`];
 
 // render all text in the dom at pageload
+
 pageNumber=0;
 updatePage();
 
