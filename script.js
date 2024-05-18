@@ -112,7 +112,7 @@ button1.addEventListener("click", ()=> {
     filler.hidden="hidden";
     switch(pageNumber) {
         case 0:
-            pageNumber=1;
+            pageNumber=8;
             break;
         case 1:
             pageNumber=specialEvent();
