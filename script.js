@@ -167,6 +167,11 @@ button1.addEventListener("click", ()=> {
         case 17:
             pageNumber=undefined; //fix me
             break;
+        case undefined:
+            bigTitle.hidden="";
+            filler.hidden="";
+            pageNumber=0;
+            break;
     }
     updatePage();
 });
