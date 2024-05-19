@@ -108,11 +108,11 @@ updatePage();
 // BUTTON 1
 button1.addEventListener("click", ()=> {
     console.log("clicked button1");
-    //bigTitle.hidden="hidden";
+    bigTitle.hidden="hidden";
     filler.hidden="hidden";
     switch(pageNumber) {
         case 0:
-            pageNumber=8;
+            pageNumber=1;
             break;
         case 1:
             pageNumber=specialEvent();
