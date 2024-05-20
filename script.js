@@ -108,7 +108,7 @@ updatePage();
 // BUTTON 1
 button1.addEventListener("click", ()=> {
     console.log("clicked button1");
-    bigTitle.hidden="hidden"; // hide page numbers
+    //bigTitle.hidden="hidden"; // hide page numbers
     filler.hidden="hidden";
     switch(pageNumber) {
         case 0:
