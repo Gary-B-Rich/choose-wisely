@@ -92,6 +92,7 @@ Putting the phone away you suddenly notice that there's a house in the distace. 
 It was hard to see, because there isn't a single light on anywhere.  \
 Either everyone is asleep, or nobody is home.\n
 Do you want to try ringing the doorbell, or just continue walking on the road?`,//end page 16
+`This is the text for page seventeen.`,//end page 17
 ];
 
 const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`Road`,`Talk`,`Play`,`Play`,`Play`,`Ride`,`Play`,`Play`,`Bell`];
@@ -100,7 +101,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=8;
+pageNumber=17;
 updatePage();
 
 // add functions to buttons
