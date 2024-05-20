@@ -73,7 +73,8 @@ The officer radios for a tow truck, and after about another hour you're back in 
 He even has a spare that fits your vehicle.  
 \nAfter only 20 minutes from looking in the window, \
 your tire is changed and you are happily on your way.`,//end page 12
-`Headlights suddenly appear far up the road behind you.
+`You skip the dark house and continue walking down the main road for a while.  \
+Headlights suddenly appear far up the road behind you.
 After a minute or two, an old pick up truck pulls up and rolls to a stop.\n
 You can smell the alcohol on the driver before he even speaks.  He offers you a ride to the gas station, \
 but he is very intoxicated.\n
@@ -242,7 +243,7 @@ button2.addEventListener("click", ()=> {
             pageNumber=1;
             break;
         case 16:
-            pageNumber=undefined; //fix me
+            pageNumber=13;
             break;
         case 17:
             pageNumber=undefined; //fix me
