@@ -152,7 +152,7 @@ button1.addEventListener("click", ()=> {
             pageNumber=1;
             break;
         case 13:
-            pageNumber=undefined; //fix me
+            pageNumber=17;
             break;
         case 14:
             pageNumber=1;
