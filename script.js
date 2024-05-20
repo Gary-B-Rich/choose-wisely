@@ -95,19 +95,22 @@ Either everyone is asleep, or nobody is home.\n
 Do you want to try ringing the doorbell, or just continue walking on the road?`,//end page 16
 
 /* fix me */
-`This is the text for page seventeen.`,//end page 17
+`You reluctantly decide to take him up on his offer and get in the truck.  The driver's speech\
+is very slurred and he weaves around on the road a bit.  But in spite of being extremely intoxicated, \
+he manages to navagate to the next gas station as promised.\n
+There you find everything you need to get your tire repaired.`,//end page 17
 
 /* fix me */
 `This is where I'd put the text for eighteen.`//end page 18
 ];
 
-const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`Road`,`Talk`,`Play`,`Play`,`Play`,`Ride`,`Play`,`Play`,`Bell`,`*17*`,`*18*`,];
+const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`Road`,`Talk`,`Play`,`Play`,`Play`,`Ride`,`Play`,`Play`,`Bell`,`Play`,`*18*`,];
 
-const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`Wait`,`Run!`,`Again`,`Again`,`Again`,`Pass`,`Again`,`Again`,`Walk`,`*17*`,`*18*`];
+const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`Wait`,`Run!`,`Again`,`Again`,`Again`,`Pass`,`Again`,`Again`,`Walk`,`Again`,`*18*`];
 
 // render all text in the dom at pageload
 
-pageNumber=8;
+pageNumber=17;
 updatePage();
 
 // add functions to buttons
