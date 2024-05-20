@@ -13,11 +13,11 @@ const button2 = document.getElementById("button2");
 // arrays for each div text:
 
 const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`Six`,`Seven`,`Eight`,
-`Nine`,`Ten`,`Eleven`,`Twelve`,`Thirteen`,`Fourteen`,`Fifteen`,`Sixteen`,`Seventeen`];
+`Nine`,`Ten`,`Eleven`,`Twelve`,`Thirteen`,`Fourteen`,`Fifteen`,`Sixteen`,`Seventeen`,`Eighteen`];
 
 const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot it`,`Pathological`,
 `Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`,`Recue Me`,`Ready Set GO`,
-`Yackity Yack`,`High Spirits`,`Don't Knock It`,`Just You Wait`,`Road to Ruin`,`Rides from Strangers`];
+`Yackity Yack`,`High Spirits`,`Don't Knock It`,`Just You Wait`,`Road to Ruin`,`Rides from Strangers`,`Catchy title for page 18 goes here`,];
 
 const textArray=[`Play now?`,//end page 0
 `It is an early summer evening, just past nightfall.  \
@@ -92,16 +92,21 @@ Putting the phone away you suddenly notice that there's a house in the distace. 
 It was hard to see, because there isn't a single light on anywhere.  \
 Either everyone is asleep, or nobody is home.\n
 Do you want to try ringing the doorbell, or just continue walking on the road?`,//end page 16
+
+/* fix me */
 `This is the text for page seventeen.`,//end page 17
+
+/* fix me */
+`This is where I'd put the text for eighteen.`//end page 18
 ];
 
-const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`Road`,`Talk`,`Play`,`Play`,`Play`,`Ride`,`Play`,`Play`,`Bell`];
+const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`Road`,`Talk`,`Play`,`Play`,`Play`,`Ride`,`Play`,`Play`,`Bell`,`*17*`,`*18*`,];
 
-const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`Wait`,`Run!`,`Again`,`Again`,`Again`,`Pass`,`Again`,`Again`,`Walk`];
+const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`Wait`,`Run!`,`Again`,`Again`,`Again`,`Pass`,`Again`,`Again`,`Walk`,`*17*`,`*18*`];
 
 // render all text in the dom at pageload
 
-pageNumber=17;
+pageNumber=18;
 updatePage();
 
 // add functions to buttons
@@ -166,6 +171,9 @@ button1.addEventListener("click", ()=> {
             pageNumber=undefined; //fix me
             break;
         case 17:
+            pageNumber=undefined; //fix me
+            break;
+        case 18:
             pageNumber=undefined; //fix me
             break;
 
