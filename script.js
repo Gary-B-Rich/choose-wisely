@@ -20,6 +20,7 @@ const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot
 `Yackity Yack`,`High Spirits`,`Don't Knock It`,`Just You Wait`,`Road to Ruin`,`Rides from Strangers`,`*PAGE 18*`,`*PAGE 19*`,`*PAGE 20*`,];
 
 const textArray=[`Play now?`,//end page 0
+
 `It is an early summer evening, just past nightfall.  \
 Stars fill the sky, as a small crescent moon offers little light.\n
 You are driving through a remote area with only the radio to keep you company.  \
@@ -27,65 +28,80 @@ An unexpected flat tire and no spare leaves you stranded in the middle of nowher
 You try your cell phone, but there's no service.\n
 By your estimation the next gas station is about 10 miles up the road.\n
 Will you wait in the car and hope someone comes along, or will you start walking?`,//end page 1
+
 `You decide to wait in the car and hope someone comes along.
 90 minutes pass, and not one single car approaches.\n
 You check your phone again, and there's still no service.\n
 Another 30 minutes pass.  Do you want to keep waiting?`,//end page 2
+
 `You lock the car and start walking down the road in the dark.  \
 Both sides are lined with dense forest.\n
 After what feels like about an hour, you come across a dirt path leading into the woods.\n
 You can't see where the path leads, but you notice a distant light flickering in that direction.\n
 Do you want to stay on the main road, or do you want to see if the path leads to someone who can help?`,//end page 3
+
 `Leaving the main road, you start walking down the dirt path into the deep woods.
 Trees have overgrown the sides, and branches scratch your face and arms in the dark.\n
 As you continue on the winding path, the shape of a small building begins to form.
 You realize the flickering light is coming from the window of a small cabin.\n
 Do you want to approach the cabin, or do you decide to quietly go back to the main road?`,//end page 4
+
 `You quietly walk up to the cabin until you're standing just outside the door.
 The only sounds you hear are the crickets chirping.  Other than that, everything seems quiet.\n
 The immediate area around the cabin gives the impression that someone is currently living here.
 Around the side of the cabin, light is still flickering in the only window.\n
 Do you want to try looking in the window, or do you want to knock on the door?`,//end page 5
+
 `You loudly knock on the door several times, and wait.\n
 You still don't hear anything, and nobody answers.\n\n
 Do you want to try opening the door, or would you rather just go back to the main road?`,//end page 6
+
 `Nobody seems to be home, so you turn around and start heading back to the main road.\n
 About 50 yards from the cabin you step in a bear trap that you didn't see in the dim moonlight.\n
 You try to free yourself, but the trap is firmly lodged in your broken leg.\n
 Nobody finds you in time.`,//end page 7
+
 `The door isn't locked and opens easily.  You hesitantly walk inside.\n
 The flickering light is coming from a burning oil lamp.  Other than the
 lamp, there doesn't appear to be any signs of anyone around.  But why would
 someone light a lamp, and then leave?  Strange.\n
 Do you want to walk back to the main road, or do you want to wait to see if anyone shows up?`,//end page 8
+
 `You decide to creep up to the window, and take a look inside.\n
 There's a large person - who would best be described as a mountain man
 sitting at a makeshift table.  Sitting on the table are several pistols,
 and the man appears to be cleaning a shotgun.  He suddenly notices you,
 quickly swaps the shotgun for two of the pistols, and runs in the direction of the door.\n
 Do you want to try to reason with him, or run for it?`,//end page 9
+
 `You decide to wait in the car and hope that somebody shows up.
 After about 45 minutes you notice another vehicle's headlights in your rear view mirror.
 As luck would have it, the vehicle turns out to be a police officer.\n
 The officer radios for a tow truck, and after about another hour you're back in civization.`,//end page 10
+
 `You try to make a run for it, but not even the fastest Olymplic sprinter can outrun a bullet.`,//end page 11
+
 `He turns out to be a friendly fellow who is more than happy to help you get your flat tire repaired.  
 He even has a spare that fits your vehicle.  
 \nAfter only 20 minutes from looking in the window, \
 your tire is changed and you are happily on your way.`,//end page 12
+
 `You skip the dark house and continue walking down the main road for a while.  \
 Headlights suddenly appear far up the road behind you.
 After a minute or two, an old pick up truck pulls up and rolls to a stop.\n
 You can smell the alcohol on the driver before he even speaks.  He offers you a ride to the gas station, \
 but he is very intoxicated.\n
 Do you take him up on his offer, or do you decline?`,//end page 13
+
 `You wait in the car for a little while, when suddenly out of nowhere somebody knocks on the window.\n  
 Startled, you reluctatly roll the window down.  The stranger seems confused, and asks if he can get a ride.  \
 You inform him about the flat tire, and he seems even more confused.  He then gets angry, produces a pistol, \
 and shoots you dead.  \n
 Your body is found the next morning.`,//end page 14
+
 `You continue to wait in the car.  You do nothing else but wait in the car.\n
 In fact, you wait in the car for so long that you eventually get bored and die.`,//end page 15
+
 `You decide to 'nope out', and continue down the main road.   
 After a while you check your phone.  It's been another another, and there's still no reception.  \
 You notice the battery has lost a fair amount of charge.\n
@@ -94,7 +110,6 @@ It was hard to see, because there isn't a single light on anywhere.  \
 Either everyone is asleep, or nobody is home.\n
 Do you want to try ringing the doorbell, or just continue walking on the road?`,//end page 16
 
-/* fix me */
 `You reluctantly decide to take him up on his offer and get in the truck.  The driver's speech \
 is very slurred and he weaves around on the road a bit.  But in spite of being extremely intoxicated, \
 he manages to navagate to the next gas station as promised.\n
