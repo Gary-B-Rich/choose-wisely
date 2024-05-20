@@ -95,7 +95,7 @@ Either everyone is asleep, or nobody is home.\n
 Do you want to try ringing the doorbell, or just continue walking on the road?`,//end page 16
 
 /* fix me */
-`You reluctantly decide to take him up on his offer and get in the truck.  The driver's speech\
+`You reluctantly decide to take him up on his offer and get in the truck.  The driver's speech \
 is very slurred and he weaves around on the road a bit.  But in spite of being extremely intoxicated, \
 he manages to navagate to the next gas station as promised.\n
 There you find everything you need to get your tire repaired.`,//end page 17
@@ -249,7 +249,7 @@ button2.addEventListener("click", ()=> {
             pageNumber=13;
             break;
         case 17:
-            pageNumber=undefined; //fix me
+            pageNumber=1;
             break;
         case 18:
         pageNumber=undefined; //fix me
