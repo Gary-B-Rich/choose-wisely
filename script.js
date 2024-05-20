@@ -75,7 +75,7 @@ He even has a spare that fits your vehicle.
 your tire is changed and you are happily on your way.`,//end page 12
 `Headlights suddenly appear far up the road behind you.
 After a minute or two, an old pick up truck pulls up and rolls to a stop.\n
-You can smell the alcohol on the driver, before he even speaks.  He offers you a ride to the gas station, \
+You can smell the alcohol on the driver before he even speaks.  He offers you a ride to the gas station, \
 but he is very intoxicated.\n
 Do you take him up on his offer, or do you decline?`,//end page 13
 `You wait in the car for a little while, when suddenly out of nowhere somebody knocks on the window.\n  
@@ -100,7 +100,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=0;
+pageNumber=13;
 updatePage();
 
 // add functions to buttons
