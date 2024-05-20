@@ -116,7 +116,14 @@ he manages to navagate to the next gas station as promised.\n
 There you find everything you need to get your tire repaired.`,//end page 17
 
 /* fix me */
-`This is where I'd put the text for eighteen.`//end page 18
+`This is where I'd put the text for eighteen.`,//end page 18
+
+/* fix me */
+`This is where I'd put the text for ninteen.`,//end page 19
+
+/* fix me */
+`This is where I'd put the text for twenty.`,//end page 20
+
 ];
 
 const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`Road`,`Talk`,`Play`,`Play`,`Play`,`Ride`,`Play`,`Play`,`Bell`,`Play`,`*18*`,];
