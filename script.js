@@ -106,7 +106,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=18;
+pageNumber=13;
 updatePage();
 
 // add functions to buttons
@@ -232,7 +232,7 @@ button2.addEventListener("click", ()=> {
             pageNumber=1;
             break;
         case 13:
-            pageNumber=undefined; //fix me
+            pageNumber=18;
             break;
         case 14:
             pageNumber=1;
@@ -247,6 +247,9 @@ button2.addEventListener("click", ()=> {
         case 17:
             pageNumber=undefined; //fix me
             break;
+        case 18:
+        pageNumber=undefined; //fix me
+        break;
 
         case undefined:
             bigTitle.hidden="";
