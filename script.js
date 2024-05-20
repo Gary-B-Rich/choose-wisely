@@ -17,7 +17,7 @@ const bigTitleArray=[`Choose Your Own Fate`,`One`,`Two`,`Three`,`Four`,`Five`,`S
 
 const smallTitleArray=[`By Gary B. Rich`,`Your Story Begins`,`Staying put`,`Foot it`,`Pathological`,
 `Cabin in the Woods`,`Knock knock who's there`,`Nope Out`,`Unlocked`,`Peek a Boo`,`Recue Me`,`Ready Set GO`,
-`Yackity Yack`,`High Spirits`,`Don't Knock It`,`Just You Wait`,`Road to Ruin`,`Rides from Strangers`,`Catchy title for page 18 goes here`,];
+`Yackity Yack`,`High Spirits`,`Don't Knock It`,`Just You Wait`,`Road to Ruin`,`Rides from Strangers`,`*PAGE 18*`,`*PAGE 19*`,`*PAGE 20*`,];
 
 const textArray=[`Play now?`,//end page 0
 `It is an early summer evening, just past nightfall.  \
