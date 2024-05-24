@@ -322,6 +322,7 @@ function specialEvent() {
 } 
 
 // console.log each array for current page
+
 function currentArrayLog() {
     //console.clear();
     console.log(`Page num: ${pageNumber}`)
