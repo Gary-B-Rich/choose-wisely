@@ -132,7 +132,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=18;
+pageNumber=8;
 updatePage();
 
 // add functions to buttons
@@ -243,7 +243,7 @@ button2.addEventListener("click", ()=> {
             pageNumber=1;
             break;
         case 8:
-            pageNumber=undefined; //fix me
+            pageNumber=18;
             break;
         case 9:
             pageNumber=11;
