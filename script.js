@@ -116,7 +116,12 @@ he manages to navagate to the next gas station as promised.\n
 There you find everything you need to get your tire repaired.`,//end page 17
 
 /* fix me */
-`This is where I'd put the text for eighteen.`,//end page 18
+`After waiting for a while you start to get the feeling that you're not alone.  You somehow feel as though \
+someone is watching you.  And you begin to get downright creeped out.\n
+Suddenly, a strong feeling of cold air surrounds you.  You begin to shiver and you notice it's cold enough \
+to see your breath.  At that moment the lantern begins to flicker brightly, and then goes out comepletely.\n
+As you sit in total darkness, you realize that the owner of the cabin did come home.  And that you're going \
+to have plenty of time to get to know each other, because you're never leaving. `,//end page 18
 
 /* fix me */
 `This is where I'd put the text for ninteen.`,//end page 19
@@ -258,7 +263,7 @@ button2.addEventListener("click", ()=> {
             pageNumber=1;
             break;
         case 13:
-            pageNumber=18;
+            pageNumber=19;
             break;
         case 14:
             pageNumber=1;
