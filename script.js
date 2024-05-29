@@ -103,7 +103,7 @@ Your body is found the next morning.`,//end page 14
 In fact, you wait in the car for so long that you eventually get bored and die.`,//end page 15
 
 `You decide to 'nope out', and continue down the main road.   
-After a while you check your phone.  It's been another another, and there's still no reception.  \
+After a while you check your phone.  It's been another hour, and there's still no reception.  \
 You notice the battery has lost a fair amount of charge.\n
 Putting the phone away you suddenly notice that there's a house in the distace.  \
 It was hard to see, because there isn't a single light on anywhere.  \
@@ -137,7 +137,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=13;
+pageNumber=16;
 updatePage();
 
 // add functions to buttons
