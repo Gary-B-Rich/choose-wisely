@@ -209,6 +209,9 @@ button1.addEventListener("click", ()=> {
         case 18:
             pageNumber=1;
             break;
+        case 19:
+            pageNumber=1;
+            break;
         
         case undefined:
             bigTitle.hidden="";
