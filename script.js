@@ -124,7 +124,9 @@ As you sit in total darkness, you realize that the owner of the cabin did come h
 to have plenty of time to get to know each other, because you're never leaving. `,//end page 18
 
 /* fix me */
-`This is where I'd put the text for ninteen.`,//end page 19
+`You decline his offer, and assure him that you're okay.  He shrugs his shoulders and drives away.  Watching \
+him leave you wonder if you made the wrong decision.  \n
+As it turns out, the drunk driver is the last person to ever see you alive.  You disappear without a trace.`,//end page 19
 
 /* fix me */
 `This is where I'd put the text for twenty.`,//end page 20
