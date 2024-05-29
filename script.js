@@ -115,7 +115,6 @@ is very slurred and he weaves around on the road a bit.  But in spite of being e
 he manages to navagate to the next gas station as promised.\n
 There you find everything you need to get your tire repaired.`,//end page 17
 
-/* fix me */
 `After waiting for a while you start to get the feeling that you're not alone.  You somehow feel as though \
 someone is watching you.  And you begin to get downright creeped out.\n
 Suddenly, a strong feeling of cold air surrounds you.  You begin to shiver and you notice it's cold enough \
@@ -123,9 +122,8 @@ to see your breath.  At that moment the lantern begins to flicker brightly, and 
 As you sit in total darkness, you realize that the owner of the cabin did come home.  And that you're going \
 to have plenty of time to get to know each other, because you're never leaving. `,//end page 18
 
-/* fix me */
 `You decline his offer, and assure him that you're okay.  He shrugs his shoulders and drives away.  Watching \
-him leave you wonder if you made the wrong decision.  \n
+him leave, you wonder if you made the wrong decision.  \n
 As it turns out, the drunk driver is the last person to ever see you alive.  You disappear without a trace.`,//end page 19
 
 /* fix me */
