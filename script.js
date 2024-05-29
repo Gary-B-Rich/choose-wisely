@@ -133,7 +133,7 @@ to have plenty of time to get to know each other, because you're never leaving. 
 
 const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`Road`,`Talk`,`Play`,`Play`,`Play`,`Ride`,`Play`,`Play`,`Bell`,`Play`,`Play`,`Play`,`*20*`];
 
-const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`Wait`,`Run!`,`Again`,`Again`,`Again`,`Pass`,`Again`,`Again`,`Walk`,`Again`,`Again`,`*19*`,`*20*`];
+const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`Wait`,`Run!`,`Again`,`Again`,`Again`,`Pass`,`Again`,`Again`,`Walk`,`Again`,`Again`,`Again`,`*20*`];
 
 // render all text in the dom at pageload
 
