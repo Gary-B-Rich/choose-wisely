@@ -127,7 +127,9 @@ him leave, you wonder if you made the wrong decision.  \n
 As it turns out, the drunk driver is the last person to ever see you alive.  You disappear without a trace.`,//end page 19
 
 /* fix me */
-`This is where I'd put the text for twenty.`,//end page 20
+`You walk up to the dark house and ring the doorbell.  Inside the house, several large sounding dogs begin barking.  \
+You didn't notice the large doggy door until one of the dogs suddenly bursts outside and attacks.  And then is joined \
+by another.  And then several more.  You put up a valiant fight, but in the end there are just too many.`,//end page 20
 
 ];
 
