@@ -135,7 +135,7 @@ const button1Array=[`Play`,`Wait`,`Wait`,`Road`, `Cabin`,`Look`,`Door`,`Play`,`R
 `Play`,`Play`,`Play`,`Ride`,`Play`,`Play`,`Bell`,`Play`,`Play`,`Play`,`Play`];
 
 const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`Wait`,`Run!`,
-`Again`,`Again`,`Again`,`Pass`,`Again`,`Again`,`Walk`,`Again`,`Again`,`Again`,`*20*`];
+`Again`,`Again`,`Again`,`Pass`,`Again`,`Again`,`Walk`,`Again`,`Again`,`Again`,`Again`];
 
 // render all text in the dom at pageload
 
