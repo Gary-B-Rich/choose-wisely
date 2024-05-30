@@ -141,7 +141,7 @@ const button2Array=[`Play`,`Walk`,`Walk`,`Path`, `Road`,`Door`,`Road`,`Again`,`W
 
 // render all text in the dom at pageload
 
-pageNumber=20;
+//pageNumber=20;
 updatePage();
 
 // add functions to buttons
@@ -149,7 +149,7 @@ updatePage();
 // BUTTON 1
 button1.addEventListener("click", ()=> {
     console.log("clicked button1");
-    //bigTitle.hidden="hidden"; // hide page numbers
+    bigTitle.hidden="hidden"; // hide page numbers
     filler.hidden="hidden";
     switch(pageNumber) {
         case 0:
