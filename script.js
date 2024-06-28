@@ -230,7 +230,7 @@ button1.addEventListener("click", ()=> {
 // BUTTON 2
 button2.addEventListener("click", ()=> {
     console.log("clicked button2");
-    //bigTitle.hidden="hidden";
+    bigTitle.hidden="hidden";
     filler.hidden="hidden";
     switch(pageNumber) {
         case 0:
