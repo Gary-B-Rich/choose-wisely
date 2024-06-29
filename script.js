@@ -1,5 +1,6 @@
 // script.js for choose-wisely
 
+
 // initialize variables
 let pageNumber=0;
 let waiting=0;
